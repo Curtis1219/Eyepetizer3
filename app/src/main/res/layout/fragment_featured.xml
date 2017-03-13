@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.eyepetizer.moduls.featured.FeaturedFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/featured_fragment_text_id"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="99999"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        />
+
+    <com.example.administrator.eyepetizer.tools.view.PullToZoomListViewEx
+        android:id="@+id/featured_fragment_list_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:zoomView="@layout/list_head_zoom_view"
+        android:scrollbars="none"
+        />
+
+
+</LinearLayout>

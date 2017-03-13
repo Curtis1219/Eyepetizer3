@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/author_fragment_list_item_video_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:background="#66000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:src="@drawable/ic_notification"
+            android:scaleType="centerCrop"
+            android:id="@+id/author_fragment_list_item_video_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:id="@+id/author_fragment_list_item_video_text1"
+                android:text="TITLE"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="bottom"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/author_fragment_list_item_video_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:layout_toRightOf="@+id/TEXT01"
+                    android:layout_alignBottom="@+id/TEXT01"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/author_fragment_list_item_video_text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="59"
+                    android:layout_toRightOf="@+id/TEXT03"
+                    android:layout_alignBottom="@+id/TEXT01"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:id="@+id/author_fragment_list_item_video_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="旅游"
+                    android:layout_toLeftOf="@+id/TEXT01"
+                    android:layout_alignBottom="@+id/TEXT01"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:id="@+id/TEXT02"
+                    android:text="# "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/author_fragment_list_item_video_text2"
+                    android:layout_alignBottom="@+id/TEXT01"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/TEXT01"
+                    android:text="  /  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    />
+                <TextView
+                    android:id="@+id/TEXT03"
+                    android:text=" ' "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/author_fragment_list_item_video_text4"
+                    android:layout_alignBottom="@+id/TEXT01"
+                    android:textColor="#fff"
+                    />
+                <TextView
+                    android:id="@+id/TEXT04"
+                    android:text=" '' "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/author_fragment_list_item_video_text5"
+                    android:layout_alignBottom="@+id/TEXT01"
+                    android:textColor="#fff"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:id="@+id/author_fragment_list_item_video_text3"
+                android:text="内容"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="top"
+                android:textColor="#fff"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

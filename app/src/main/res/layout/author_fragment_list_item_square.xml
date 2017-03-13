@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="热门排行？？"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="#fff"
+        android:id="@+id/author_fragment_list_item_square_text"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/author_fragment_list_item_square_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

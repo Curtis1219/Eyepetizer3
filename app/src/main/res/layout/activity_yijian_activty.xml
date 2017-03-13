@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:id="@+id/lyout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_md_back04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:src="@mipmap/ic_action_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                       意见反馈"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_yj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:onClick="click"
+            android:text="发送" />
+    </LinearLayout>
+    <View
+        android:background="#9f9a9a"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center_horizontal"
+        android:text="--反馈问题的类型--" />
+
+    <RadioGroup
+        android:id="@+id/rg_id02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_01"
+            android:checked="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="right"
+            android:text="使用问题|"
+            android:textColor="@color/rg_color" />
+
+
+        <RadioButton
+            android:id="@+id/rb_02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="功能建议"
+            android:textColor="@color/rg_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|" />
+
+        <RadioButton
+            android:id="@+id/rb_03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="其他反馈"
+            android:textColor="@color/rg_color" />
+
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/ed_01"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:background="#e9dede"
+        android:hint="请告诉我们你遇到的问题及反馈的意见" />
+
+    <EditText
+        android:id="@+id/ed_02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="#e9dede"
+        android:hint="邮箱" />
+
+
+</LinearLayout>

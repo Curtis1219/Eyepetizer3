@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:orientation="vertical">
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:id="@+id/featured_fragment_list_item_ofauthor_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/featured_fragment_list_item_ofauthor_text1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="打字"
+                android:textSize="18sp"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/featured_fragment_list_item_ofauthor_text2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="小字"
+                android:textSize="15sp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/featured_fragment_list_item_ofauthor_image2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="+ 关注"
+                android:gravity="center"
+                android:layout_weight="3"/>
+            
+        </LinearLayout>
+        
+    </FrameLayout>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/featured_fragment_list_item_ofauthor_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

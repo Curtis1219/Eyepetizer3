@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <Button
+            android:id="@+id/button_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/ic_menu_more"
+            android:onClick="click" />
+
+        <ImageView
+            android:id="@+id/image_view_id_02"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/button_more"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_action_focus" />
+
+        <TextView
+            android:id="@+id/text_view_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view_id_02"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="点击登录即可发表评论及同步已收藏视频" />
+
+        <Button
+            android:id="@+id/button_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_view_id"
+            android:layout_below="@+id/text_view_id"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_grey_heart"
+            android:text="收藏" />
+
+        <Button
+            android:id="@+id/button_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/text_view_id"
+            android:layout_below="@+id/text_view_id"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/ic_action_reply_grey_without_padding"
+            android:onClick="click"
+            android:text="评论" />
+
+    </RelativeLayout>
+    <!--设置分隔条透明-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="20dp"
+        android:background="#C0C0C0" />
+
+    <ListView
+        android:id="@+id/wo_de_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000"
+        android:dividerHeight="50dp"></ListView>
+</LinearLayout>

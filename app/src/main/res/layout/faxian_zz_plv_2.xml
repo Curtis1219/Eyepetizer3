@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:layout_margin="10dp"
+    android:layout_marginTop="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <ImageView
+            android:id="@+id/iv_fx_plv_1"
+            android:layout_width="50dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_fx_zz_2"
+            android:text="罐头视频"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_fx_plv_1"
+            android:textColor="#000"
+            android:textSize="20sp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@id/tv_fx_zz_2"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_fx_zz_3"
+            android:layout_toLeftOf="@+id/but_fx_zz_01"
+            android:layout_toRightOf="@id/iv_fx_plv_1"
+            android:text="一束阳光,照亮天才电影"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="+关注"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:id="@+id/but_fx_zz_01"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

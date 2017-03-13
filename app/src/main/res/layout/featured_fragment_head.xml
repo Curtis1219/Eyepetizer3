@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.administrator.eyepetizer.tools.view.HeadZoomScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/featured_fragment_head_layout_id"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@+id/featured_fragment_head_framelayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@mipmap/home_page_header_cover"
+            >
+
+            <!--<ImageView-->
+            <!--android:src="@mipmap/home_page_header_cover"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:id="@+id/featured_head_iv_id1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/featured_head_iv_id2"
+                    android:id="@+id/featured_head_iv_id3"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/home_page_header_icon"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/featured_head_iv_id2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp" />
+
+                <TextView
+                    android:id="@+id/featured_head_tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- Monday,Mar.06 -"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+</com.example.administrator.eyepetizer.tools.view.HeadZoomScrollView>

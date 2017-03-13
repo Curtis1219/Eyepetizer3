@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_account_activity"
+    android:gravity="center"
+   >
+
+    <TextView
+        android:id="@+id/tv_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="登录即可发表评论及同步已收藏视频"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:layout_below="@id/tv_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/weibo"
+            android:onClick="click"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/account_sdk_ic_sina_dark" />
+
+        <ImageView
+            android:id="@+id/weixin"
+            android:onClick="click"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/account_sdk_ic_wechat_dark" />
+
+        <ImageView
+            android:id="@+id/qq"
+            android:onClick="click"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/account_sdk_ic_qq_dark" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <!--<string name="app_name">Library</string>-->
+    <string name="app_name">Eyepetizer</string>
+
+    <!--WoDeFrament-->
+    <string-array name="WoDe">
+        <item>我的消息</item>
+        <item>我的关注</item>
+        <item>我的缓存</item>
+        <item>意见反馈</item>
+        <item>我要投稿</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

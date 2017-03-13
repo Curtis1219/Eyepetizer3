@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:id="@+id/featured_fragment_list_item_framelayout_layout"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:id="@+id/featured_fragment_list_item_framelayout_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5">
+
+                <ImageView
+                    android:id="@+id/featured_fragment_list_item_framelayout_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_alignBottom="@+id/featured_fragment_list_item_framelayout_image2"
+                    android:layout_toLeftOf="@+id/featured_fragment_list_item_framelayout_image2"/>
+
+                <ImageView
+                    android:id="@+id/featured_fragment_list_item_framelayout_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:id="@+id/featured_fragment_list_item_framelayout_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_alignBottom="@+id/featured_fragment_list_item_framelayout_image2"
+                    android:layout_toRightOf="@+id/featured_fragment_list_item_framelayout_image2"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="大字体"
+                android:textSize="20sp"
+                android:gravity="center_horizontal"
+                android:id="@+id/featured_fragment_list_item_framelayout_text1"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="小字体"
+                android:gravity="center_horizontal"
+                android:id="@+id/featured_fragment_list_item_framelayout_text2"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/featured_fragment_list_item_framelayout_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

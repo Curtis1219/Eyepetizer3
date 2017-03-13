@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:id="@+id/iv_gz_plv_it"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv1_gz_plv_it"
+            android:layout_toRightOf="@id/iv_gz_plv_it"
+            android:text="单读视频"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toLeftOf="@+id/but_gz_item"
+            android:layout_below="@id/tv1_gz_plv_it"
+            android:layout_marginTop="7dp"
+            android:text="单读原创视频,构建每一个视频的精神世界,加油吧,小伙子"
+            android:id="@+id/tv12_gz_plv_it"
+            android:singleLine="true"
+            android:layout_toRightOf="@id/iv_gz_plv_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_gz_item"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="+关注"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/rcy_plv_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
